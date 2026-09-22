@@ -56,31 +56,59 @@
     <h1>📘 CST370 — Design and Analysis of Algorithms</h1>
     <p><strong>Learning Journal</strong> — Weekly reflections on course material, puzzles, and algorithm analysis.</p>
     <hr />
-<div class="entry">
-    <div class="date">Week 2 — September 14, 2026</div>
-    <h2>Asymptotic Notations &amp; Algorithm Analysis</h2>
-    <p>
-        This week's module focused on asymptotic notations (Big O, Big Omega, Big Theta) and
-        their role in analyzing algorithm efficiency. I learned the formal definitions and
-        practiced applying them to both nonrecursive and recursive algorithms. The OpenStax
-        figures helped me visualize orders of growth, making it clearer why O(n²) grows so
-        much faster than O(n log n). I also studied recurrence relations and backward
-        substitution for analyzing recursive algorithms like the Tower of Hanoi. The brute
-        force algorithm design lecture introduced a straightforward problem-solving approach
-        that serves as a baseline for comparison with more sophisticated techniques.
-    </p>
-    <p>
-        <strong>Key learnings:</strong>
-        <ul>
-            <li><strong>Asymptotic Notations:</strong> Big O (upper bound), Big Omega (lower bound), and Big Theta (tight bound). Formal definitions using constants c and n₀.</li>
-            <li><strong>Nonrecursive Analysis:</strong> Counting basic operations and identifying loop-dependent growth rates. Example: nested loops → O(n²).</li>
-            <li><strong>Recursive Analysis:</strong> Setting up recurrence relations and solving via backward substitution. Tower of Hanoi: T(n) = 2T(n-1) + 1 → O(2ⁿ).</li>
-            <li><strong>Brute Force:</strong> Straightforward approach that guarantees a solution but may lack efficiency. Useful as a baseline for optimization.</li>
-            <li><strong>Puzzles:</strong> Solved the 4-gallons water puzzle and the racing cars puzzle, reinforcing logical step-by-step problem-solving.</li>
-        </ul>
-    </p>
-    <p class="topics"><strong>Topics:</strong> Big O · Big Omega · Big Theta · Recurrence Relations · Tower of Hanoi · Brute Force</p>
-</div>
+
+    <div class="entry">
+        <div class="date">Week 3 — September 21, 2026</div>
+        <h2>Brute Force, Graph Traversal &amp; Divide and Conquer</h2>
+        <p>
+            This week's module expanded on brute force techniques with string matching and
+            exhaustive search problems like TSP, Knapsack, and the Assignment problem. I learned
+            how brute force guarantees a solution but often at exponential cost. The module then
+            introduced graph traversal algorithms—Depth-First Search (DFS) and Breadth-First
+            Search (BFS)—including their time efficiencies (both O(V+E) for adjacency lists).
+            Finally, we began exploring the divide-and-conquer design paradigm and the Master
+            Theorem for analyzing recurrence relations of divide-and-conquer algorithms.
+        </p>
+        <p>
+            <strong>Key learnings:</strong>
+            <ul>
+                <li><strong>Brute Force String Matching:</strong> O(nm) worst-case — compares pattern against every position in text.</li>
+                <li><strong>Exhaustive Search:</strong> TSP (n! permutations), Knapsack (2ⁿ subsets), Assignment (n! permutations) — all factorial or exponential.</li>
+                <li><strong>DFS:</strong> Uses a stack (or recursion), explores as deep as possible before backtracking. Time: O(V+E) with adjacency list.</li>
+                <li><strong>BFS:</strong> Uses a queue, explores level by level. Finds shortest path in unweighted graphs. Time: O(V+E).</li>
+                <li><strong>Divide and Conquer:</strong> Divides problem into subproblems, solves recursively, combines results. Master Theorem: T(n) = aT(n/b) + f(n).</li>
+                <li><strong>Puzzles:</strong> Solved the FakeCoin puzzle (dividing coins into groups) and the Finger Count puzzle (pattern recognition).</li>
+            </ul>
+        </p>
+        <p class="topics"><strong>Topics:</strong> Brute Force · String Matching · TSP · DFS · BFS · Divide and Conquer · Master Theorem</p>
+    </div>
+
+    <div class="entry">
+        <div class="date">Week 2 — September 14, 2026</div>
+        <h2>Asymptotic Notations &amp; Algorithm Analysis</h2>
+        <p>
+            This week's module focused on asymptotic notations (Big O, Big Omega, Big Theta) and
+            their role in analyzing algorithm efficiency. I learned the formal definitions and
+            practiced applying them to both nonrecursive and recursive algorithms. The OpenStax
+            figures helped me visualize orders of growth, making it clearer why O(n²) grows so
+            much faster than O(n log n). I also studied recurrence relations and backward
+            substitution for analyzing recursive algorithms like the Tower of Hanoi. The brute
+            force algorithm design lecture introduced a straightforward problem-solving approach
+            that serves as a baseline for comparison with more sophisticated techniques.
+        </p>
+        <p>
+            <strong>Key learnings:</strong>
+            <ul>
+                <li><strong>Asymptotic Notations:</strong> Big O (upper bound), Big Omega (lower bound), and Big Theta (tight bound). Formal definitions using constants c and n₀.</li>
+                <li><strong>Nonrecursive Analysis:</strong> Counting basic operations and identifying loop-dependent growth rates. Example: nested loops → O(n²).</li>
+                <li><strong>Recursive Analysis:</strong> Setting up recurrence relations and solving via backward substitution. Tower of Hanoi: T(n) = 2T(n-1) + 1 → O(2ⁿ).</li>
+                <li><strong>Brute Force:</strong> Straightforward approach that guarantees a solution but may lack efficiency. Useful as a baseline for optimization.</li>
+                <li><strong>Puzzles:</strong> Solved the 4-gallons water puzzle and the racing cars puzzle, reinforcing logical step-by-step problem-solving.</li>
+            </ul>
+        </p>
+        <p class="topics"><strong>Topics:</strong> Big O · Big Omega · Big Theta · Recurrence Relations · Tower of Hanoi · Brute Force</p>
+    </div>
+
     <div class="entry">
         <div class="date">Week 1 — September 5, 2026</div>
         <h2>Introduction to Algorithms &amp; Pseudocode</h2>
