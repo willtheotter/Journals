@@ -57,6 +57,35 @@
     <p><strong>Learning Journal</strong> — Weekly reflections on course material, puzzles, and algorithm analysis.</p>
     <hr />
     <div class="entry">
+
+    <div class="entry">
+    <div class="date">Week 7 — October 19, 2026</div>
+    <h2>Dynamic Programming, Warshall, Floyd &amp; Greedy Techniques</h2>
+    <p>
+        This week's module introduced dynamic programming as a technique for solving problems
+        by breaking them into overlapping subproblems and storing results to avoid redundant
+        computation. We applied it to the Coin-Row problem (maximizing non-adjacent coin
+        values) and the Coin-Collecting problem (finding the maximum-sum path through a grid).
+        The module then covered Warshall's algorithm for computing transitive closure of a
+        directed graph and Floyd's algorithm for all-pairs shortest paths—both using dynamic
+        programming with O(n³) time complexity. Finally, we began exploring the greedy
+        technique with Prim's algorithm for finding a minimum spanning tree, which builds
+        the MST incrementally by always adding the cheapest edge connecting a new vertex.
+    </p>
+    <p>
+        <strong>Key learnings:</strong>
+        <ul>
+            <li><strong>Dynamic Programming:</strong> Optimal substructure + overlapping subproblems. Store solutions in a table (memoization/tabulation) to avoid recomputation.</li>
+            <li><strong>Coin-Row Problem:</strong> Recurrence F(n) = max(F(n-1), cₙ + F(n-2)). Build table bottom-up → O(n) time.</li>
+            <li><strong>Coin-Collecting Problem:</strong> F(i,j) = max(F(i-1,j), F(i,j-1)) + cᵢⱼ. Fill grid row by row → O(nm) time.</li>
+            <li><strong>Warshall's Algorithm:</strong> Transitive closure via three nested loops. R⁽ᵏ⁾[i][j] = R⁽ᵏ⁻¹⁾[i][j] OR (R⁽ᵏ⁻¹⁾[i][k] AND R⁽ᵏ⁻¹⁾[k][j]). O(n³).</li>
+            <li><strong>Floyd's Algorithm:</strong> All-pairs shortest paths. D⁽ᵏ⁾[i][j] = min(D⁽ᵏ⁻¹⁾[i][j], D⁽ᵏ⁻¹⁾[i][k] + D⁽ᵏ⁻¹⁾[k][j]). O(n³).</li>
+            <li><strong>Greedy Technique:</strong> Makes locally optimal choices hoping for global optimum. Prim's algorithm builds MST by adding cheapest edge connecting a new vertex → O(E log V) with a priority queue.</li>
+            <li><strong>Puzzle:</strong> Solved the Missionaries and Cannibals puzzle using state-space search and constraint reasoning.</li>
+        </ul>
+    </p>
+    <p class="topics"><strong>Topics:</strong> Dynamic Programming · Coin-Row · Coin-Collecting · Warshall's Algorithm · Floyd's Algorithm · Greedy Technique · Prim's Algorithm</p>
+</div>
     <div class="date">Week 6 — October 12, 2026</div>
     <h2>AVL Trees, 2-3 Trees, Heaps &amp; Hashing</h2>
     <p>
